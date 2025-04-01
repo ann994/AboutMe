@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Mapping - Greece</title>
+    <style>
+        body {
+            background: #F7A8C4;
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: justify;
+        }
+        h1 {
+            background: #E53888;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2, h3 {
+            color: #000000;
+            text-align: center;
+	    font-size: 24px;
+        }
+        p {
+            text-align: justify;
+            margin: 0 20px;
+            line-height: 1.6;
+        }
+        a {
+            color: #E53888;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff3385;
+        }
+        .film-container {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+        }
+        .top-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .top-link a {
+            text-decoration: underline;
+        }
+        .top-link a:hover {
+            color: purple;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+	.floating-buttons {
+    	    position: fixed;
+    	    bottom: 15px;
+    	    right: 15px;
+    	    display: flex;
+    	    flex-direction: column;
+    	    gap: 8px;
+	}
+
+ 
+	.back-button, .top-button {
+   	    background: #ffffff;
+    	    border: 2px solid #E53888;
+    	    border-radius: 6px;
+    	    padding: 5px 10px; 
+    	    font-size: 12px;
+    	    text-decoration: none;
+    	    color: #E53888;
+    	    font-weight: bold;
+    	    display: flex;
+    	    align-items: center;
+    	    justify-content: center;
+    	    gap: 3px;
+    	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    	    transition: background 0.3s, color 0.3s, transform 0.2s;
+	}
+
+	.back-button:hover, .top-button:hover {
+    	    background: #E53888;
+    	    color: #ffffff;
+    	    transform: scale(1.05);
+	}
+
+	.back-button::before {
+    	    content: "←";
+	}
+
+	.top-button::after {
+    	    content: "▲";
+    	    margin-left: 3px;
+	}
+    </style>
+</head>
+<body>
+    <div class="film-container">
+        <h3>Santorini's White-Washed Buildings</h3>
+        <a href="../Images/GreeceSantorini.jpg" target="winImage">
+            <img src="../Images/GreeceSantorini.jpg" alt="Santorini, Greece" title="Santorini, Greece" />
+        </a>
+        <p><strong>Reason why this place is special to me:</strong> This place is special to me because its stunning views and unique charm feel like something from a postcard, which is why I find it so wonderful. The iconic white building with blue domes, stunning sunsets, and peaceful atmosphere make it feel magical.</p>
+        <p><strong>How to get there:</strong> You can get there by plane or ferry. The fastest way is to fly from Athens to Santorini, which takes about 45 minutes.</p>
+    </div>
+    <div class="film-container">
+	<h2>Other places to visit in the city/country.</h2>
+        <a href="../Images/basilica.jpg" target="winImage">
+            <img src="../Images/basilica.jpg" alt="st. peter’s basilica (vatican city)" title="st. peter’s basilica (vatican city)" />
+	</a>
+	<p><strong>St. Peter’s Basilica (Vatican City):</strong> Designed by some of the finest artists in history, including Michelangelo and Bernini, it is a masterpiece of Renaissance architecture. The basilica's large Michelangelo-designed dome dominates the skyline and if you climb to the top provides breathtaking views of Rome.</p>
+     </div>
+       
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+       	<a href="DreamPlaces.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
+
+
+

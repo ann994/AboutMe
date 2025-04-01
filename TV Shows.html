@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Kind Of Film</title>
+    <style>
+        body {
+            background-color: #F7A8C4;
+            text-align: center;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #000000;
+            text-transform: uppercase;
+        }
+        h1, h2 {
+            text-decoration: underline;
+        }
+        .films-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .film-container {
+            border: 2px solid #E53888;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            flex: 1;
+        }
+        .film-content {
+            text-align: center;
+        }
+        .film-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        iframe {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin-top: 20px;
+        }
+        .floating-buttons {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-button {
+            background: #ffffff;
+            border: 2px solid #E53888;
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #E53888;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background: #E53888;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .back-button::before {
+            content: "←";
+        }
+    </style>
+</head>
+<body>
+    <h1>My Kind Of Film</h1>
+    <p>Prepare to laugh loudly and solve fascinating mysteries with my favorite mystery and comedy television series!</p>
+
+    <div class="films-container">
+        <div class="film-container">
+            <h2 id="Mystery">Mystery</h2>
+            <h3>Lucifer</h3>
+            <div class="film-content">
+                <a href="profile/lucifer.jpg" target="winImage">
+                    <img src="profile/lucifer.jpg" alt="Lucifer Poster" title="Lucifer Poster">
+                </a>
+                <div class="film-details">
+                    <p><strong>Synopsis:</strong> Morningstar, the Devil, abandons Hell to run a luxurious nightclub in Los Angeles. He soon becomes a consultant for the LAPD.</p>
+                    <p><strong>Director:</strong> Len Wiseman (Pilot), Sherwin Shilati, and various others.</p>
+                    <p><strong>Stars:</strong> Tom Ellis, Lauren German, D.B. Woodside, Lesley-Ann Brandt</p>
+                    <iframe src="https://www.youtube.com/embed/X4bF_quwNtw" title="Lucifer Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="film-container">
+            <h2 id="Comedy">Comedy</h2>
+            <h3>Big Bang Theory</h3>
+            <div class="film-content">
+                <a href="profile/big bang.jpg" target="winImage">
+                    <img src="profile/big bang.jpg" alt="Big Bang Theory Poster" title="Big Bang Theory Poster">
+                </a>
+                <div class="film-details">
+                    <p><strong>Synopsis:</strong> The show follows socially awkward physicists Leonard and Sheldon, whose lives change when aspiring actress Penny moves in across the hall. Along with their equally geeky friends.</p>
+                    <p><strong>Director:</strong> Mark Cendrowski</p>
+                    <p><strong>Stars:</strong> Johnny Galecki, Jim Parsons, Kaley Cuoco, Simon Helberg, Kunal Nayyar</p>
+                    <iframe src="https://www.youtube.com/embed/WBb3fojgW0Q" title="The Big Bang Theory Official Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="floating-buttons">
+        <a href="HomePage.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="newSpace" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Place to Explore</title>
+    <script>
+	function writeText(txt) {
+		document.getElementById("desc").innerHTML = txt;
+	}
+
+	function dissolveText() {
+		document.getElementById("desc").innerHTML = "";
+	}
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFC0CB, #FF69B4);
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: justify;
+        }
+        h1 {
+            background: #E53888;
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            border: 5px solid #E53888;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        p#desc {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            color: #800040;
+            text-align: center;
+            margin-top: 20px;
+        }
+   
+        p {
+            font-size: 30px;
+            color: #800040;
+	    text-align: center;
+        }
+
+	.floating-buttons {
+    	    position: fixed;
+    	    bottom: 15px;
+    	    right: 15px;
+    	    display: flex;
+    	    flex-direction: column;
+    	    gap: 8px;
+	}
+
+ 
+	.back-button, .top-button {
+   	    background: #ffffff;
+    	    border: 2px solid #E53888;
+    	    border-radius: 6px;
+    	    padding: 10px 15px; 
+    	    font-size: 15px;
+    	    text-decoration: none;
+    	    color: #E53888;
+    	    font-weight: bold;
+    	    display: flex;
+    	    align-items: center;
+    	    justify-content: center;
+    	    gap: 3px;
+    	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    	    transition: background 0.3s, color 0.3s, transform 0.2s;
+	}
+
+	.back-button:hover, .top-button:hover {
+    	    background: #E53888;
+    	    color: #ffffff;
+    	    transform: scale(1.05);
+	}
+
+	.back-button::before {
+    	    content: "←";
+	}
+
+	.top-button::after {
+    	    content: "▲";
+    	    margin-left: 3px;
+	}
+    </style>
+</head>
+<body>
+    <h1>Dream Place to Explore.🌍</h1>
+    <p>Here are the places I dream of exploring — full of beauty, culture, and adventure.</p>
+
+    <div class="image-container">
+        <img src="../Images/DreamPlaces.jpg" usemap="#dreamPlaces" alt="Dream Places Map">
+        <map name="dreamPlaces">
+            <area shape="rect" coords="188,104,622,572" href="Japan.html" onMouseOver="writeText('The culture of Japan is beautiful.');" onMouseout="dissolveText()" />
+
+            <area shape="circle" coords="395,1140,257" href="Greece.html" onMouseOver="writeText('Santorini, Greece, is a stunning island in the Aegean Sea.');" onMouseout="dissolveText()" />
+      
+            <area shape="poly" coords="738,393,1264,414,1242,990,713,971,738,393" href="Korea.html" onMouseOver="writeText('Korea is well-known for its K-pop, K-dramas, and Korean food.');" onMouseout="dissolveText()" />
+
+            <area shape="rect" coords="1893,1410,1369,913" href="Italy.html" onMouseOver="writeText('Italy is where history, art, and culture blend beautifully.');" onMouseout="dissolveText()" />
+
+            <area shape="rect" coords="1877,714,1353,217" href="Spain.html" onMouseOver="writeText('Spain is a beautiful and diverse country in southwestern Europe.');" onMouseout="dissolveText()" />
+        </map>
+    </div>
+
+    <p id="desc"></p>
+
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+        <a href="../../HomePage.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
+
+
+
+

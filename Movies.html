@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Kind Of Film</title>
+    <style>
+        body {
+            background-color: #F7A8C4;
+            text-align: center;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #000000;
+            text-transform: uppercase;
+        }
+        h1, h2 {
+            text-decoration: underline;
+        }
+        .films-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .film-container {
+            border: 2px solid #E53888;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            flex: 1;
+        }
+        .film-content {
+            text-align: center;
+        }
+        .film-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        iframe {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin-top: 20px;
+        }
+        .floating-buttons {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-button {
+            background: #ffffff;
+            border: 2px solid #E53888;
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #E53888;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background: #E53888;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .back-button::before {
+            content: "←";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My Kind Of Film</h1>
+    <p>As we explore my favorite action and adventure films, get ready for an exciting experience!</p>
+
+    <div class="films-container">
+        <div class="film-container">
+            <h2 id="Action">Action</h2>
+            <h3>Venom</h3>
+            <div class="film-content">
+                <a href="profile/venom.jpg" target="winImage">
+                    <img src="profile/venom.jpg" alt="Venom Poster" title="Venom Poster">
+                </a>
+                <div class="film-details">
+                    <p><strong>Synopsis:</strong> A journalist bonds with an alien symbiote, giving him superhuman powers.</p>
+                    <p><strong>Director:</strong> Ruben Fleischer</p>
+                    <p><strong>Stars:</strong> Tom Hardy, Michelle Williams, Riz Ahmed</p>
+                    <iframe src="https://www.youtube.com/embed/u9Mv98Gr5pY" title="Venom Official Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="film-container">
+            <h2 id="Adventure">Adventure</h2>
+            <h3>Moana</h3>
+            <div class="film-content">
+                <a href="profile/Moana.jpg" target="winImage">
+                    <img src="profile/Moana.jpg" alt="Moana Poster" title="Moana Poster">
+                </a>
+                <div class="film-details">
+                    <p><strong>Synopsis:</strong> A young girl sets sail to save her island and discovers her true destiny.</p>
+                    <p><strong>Director:</strong> Ron Clements, John Musker</p>
+                    <p><strong>Stars:</strong> Auli'i Cravalho, Dwayne Johnson, Rachel House</p>
+                    <iframe src="https://www.youtube.com/embed/LKFuXETZUsI" title="Moana Official Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="floating-buttons">
+        <a href="HomePage.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>

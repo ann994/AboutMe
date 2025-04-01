@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Pink Bucket List</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #F7A8C4, #FCE4EC);
+            text-align: center;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .book {
+            background: #fff;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 40px 20px;
+            border: 5px solid #E53888;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(145deg, #ffffff 50%, #f8d7da 100%);
+        }
+        .page {
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .page:hover {
+            transform: scale(1.02);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2, h3 {
+            color: #E53888;
+            text-transform: uppercase;
+        }
+        h1, h2 {
+            text-decoration: underline;
+        }
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #E53888;
+            border-radius: 5px;
+            background: #ffffff;
+            cursor: pointer;
+        }
+        .item-text {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .floating-buttons {
+    	    position: fixed;
+    	    bottom: 15px;
+    	    right: 15px;
+    	    display: flex;
+    	    flex-direction: column;
+    	    gap: 8px;
+	}
+
+ 
+	.back-button, .top-button {
+   	    background: #ffffff;
+    	    border: 2px solid #E53888;
+    	    border-radius: 6px;
+    	    padding: 5px 10px; 
+    	    font-size: 12px;
+    	    text-decoration: none;
+    	    color: #E53888;
+    	    font-weight: bold;
+    	    display: flex;
+    	    align-items: center;
+    	    justify-content: center;
+    	    gap: 3px;
+    	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    	    transition: background 0.3s, color 0.3s, transform 0.2s;
+	}
+
+	.back-button:hover, .top-button:hover {
+    	    background: #E53888;
+    	    color: #ffffff;
+    	    transform: scale(1.05);
+	}
+
+	.back-button::before {
+    	    content: "←";
+	}
+
+	.top-button::after {
+    	    content: "▲";
+    	    margin-left: 3px;
+	}
+    </style>
+</head>
+<body>
+    <div class="book">
+        <h1>My Bucket List</h1>
+        <p>Chasing dreams and turning them into reality, one goal at a time!</p>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Travel to Japan and experience cherry blossom season.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Visit the Eiffel Tower in Paris.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Attend a concert in South Korea.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Learn to speak Hangul fluently.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Master cooking my own signature dish.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Witness the northern lights.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Create a habit of going to the gym.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Collect different kinds of cosmetics.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Take up photography.</div>
+        </div>
+        <div class="page">
+            <div class="checkbox"></div>
+            <div class="item-text">Learn to play a musical instrument.</div>
+        </div>
+    </div>
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+        <a href="HomePage.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Mapping - Japan</title>
+    <style>
+        body {
+            background: #F7A8C4;
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: justify;
+        }
+        h1 {
+            background: #E53888;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2, h3 {
+            color: #000000;
+            text-align: center;
+	    font-size: 24px;
+        }
+        p {
+            text-align: justify;
+            margin: 0 20px;
+            line-height: 1.6;
+        }
+        a {
+            color: #E53888;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff3385;
+        }
+        .film-container {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+        }
+        .top-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .top-link a {
+            text-decoration: underline;
+        }
+        .top-link a:hover {
+            color: purple;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+	.floating-buttons {
+    	    position: fixed;
+    	    bottom: 15px;
+    	    right: 15px;
+    	    display: flex;
+    	    flex-direction: column;
+    	    gap: 8px;
+	}
+
+ 
+	.back-button, .top-button {
+   	    background: #ffffff;
+    	    border: 2px solid #E53888;
+    	    border-radius: 6px;
+    	    padding: 5px 10px; 
+    	    font-size: 12px;
+    	    text-decoration: none;
+    	    color: #E53888;
+    	    font-weight: bold;
+    	    display: flex;
+    	    align-items: center;
+    	    justify-content: center;
+    	    gap: 3px;
+    	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    	    transition: background 0.3s, color 0.3s, transform 0.2s;
+	}
+
+	.back-button:hover, .top-button:hover {
+    	    background: #E53888;
+    	    color: #ffffff;
+    	    transform: scale(1.05);
+	}
+
+	.back-button::before {
+    	    content: "←";
+	}
+
+	.top-button::after {
+    	    content: "▲";
+    	    margin-left: 3px;
+	}
+    </style>
+</head>
+<body>
+    <div class="film-container">
+        <h3>Sensoji Temple large temple in the Asakusa district</h3>
+        <a href="../Images/japan.jpg" target="winImage">
+            <img src="../Images/japan.jpg" alt="Tokyo, Japan" title="Tokyo, Japan" />
+        </a>
+        <p><strong>Reason why this place is special to me:</strong> Tokyo, Japan, is special to me because it perfectly blends tradition and modernity in a way that no other city does. Walking through its streets, you can experience ancient shrines and temples like Sensō-ji, standing in contrast to the futuristic skyline of places like Shibuya and Shinjuku.</p>
+        <p><strong>How to get there:</strong> For international travelers, flying is the most convenient and efficient way to reach Tokyo. The city is served by two major international airports: Narita International Airport (NRT) and Haneda Airport (HND). Narita International Airport, located about 60 kilometers from central Tokyo, handles most long-haul international flights.</p>
+    </div>
+    <div class="film-container">
+	<h2>Other places to visit in the city/country.</h2>
+        <a href="../Images/ShinjukuvsShibuya.jpg" target="winImage">
+            <img src="../Images/ShinjukuvsShibuya.jpg" alt="Shinjuku & Shibuya" title="Shinjuku & Shibuya" />
+	</a>
+	<p><strong>Shinjuku & Shibuya (Tokyo):</strong> These two districts are famous for their neon lights, towering skyscrapers, and bustling nightlife. Shibuya is home to the iconic Shibuya Crossing and the Hachiko Statue, while Shinjuku offers incredible city views from the Tokyo Metropolitan Government Building.</p>
+     </div>
+       
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+       	<a href="DreamPlaces.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>

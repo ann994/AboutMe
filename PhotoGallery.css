@@ -1,0 +1,100 @@
+body {
+            background-color: #F7A8C4;
+            text-align: center;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, p {
+            color: #ffffff;
+        }
+        .header {
+            background: #E53888;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery {
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img {
+            display: block;
+            width: 210px;
+            height: 160px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery:hover img {
+            transform: scale(1.1);
+        }
+        .description {
+            text-align: center;
+            background-color: #E53888;
+            color: white;
+            padding: 5px 0;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery:hover .description {
+            opacity: 1;
+        }
+
+        .floating-buttons {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-button, .top-button {
+            background: #ffffff;
+            border: 2px solid #E53888;
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #E53888;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .back-button:hover, .top-button:hover {
+            background: #E53888;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .back-button::before {
+            content: "←";
+        }
+
+        .top-button::after {
+            content: "▲";
+            margin-left: 3px;
+        }

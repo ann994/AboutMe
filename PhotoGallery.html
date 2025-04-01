@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            background-color: #F7A8C4;
+            text-align: center;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, p {
+            color: #ffffff;
+        }
+        .header {
+            background: #E53888;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery {
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img {
+            display: block;
+            width: 210px;
+            height: 160px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery:hover img {
+            transform: scale(1.1);
+        }
+        .description {
+            text-align: center;
+            background-color: #E53888;
+            color: white;
+            padding: 5px 0;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery:hover .description {
+            opacity: 1;
+        }
+
+        .floating-buttons {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-button, .top-button {
+            background: #ffffff;
+            border: 2px solid #E53888;
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #E53888;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .back-button:hover, .top-button:hover {
+            background: #E53888;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .back-button::before {
+            content: "←";
+        }
+
+        .top-button::after {
+            content: "▲";
+            margin-left: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Photo Dump 📸</h1>
+        <p>“Warning: Photo dump ahead! Expect a mix of good times, random snaps, and everything in between. Enjoy the scroll!”</p>
+    </div>
+    <div class="gallery-container">
+        
+        <div class="row">
+            <div class="gallery">
+                <a href="profile/family1.jpg" target="winImage">
+                <img src="profile/family1.jpg" alt="This is captured during Christmas." title="This is captured during Christmas." />
+            	</a>
+                <div class="description">Family</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/family2.jpg" target="winImage">
+                <img src="profile/family2.jpg" alt="This is captured during my Aunt's gender reveal." title="This is captured during my Aunt's gender reveal." />
+            	</a>
+                <div class="description">Family</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/family3.jpg" target="winImage">
+                <img src="profile/family3.jpg" alt="This is captured during my Aunt's wedding ceremony." title="This is captured during my Aunt's wedding ceremony." />
+            	</a>
+                <div class="description">Family</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/family4.jpg" target="winImage">
+                <img src="profile/family4.jpg" alt="This is captured during my Mother's vacation." title="This is captured during my Mother's vacation." />
+            	</a>
+                <div class="description">Family</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/family5.jpg" target="winImage">
+                <img src="profile/family5.jpg" alt="This is captured during my Mother's vacation." title="This is captured during my Mother's vacation." />
+            	</a>
+                <div class="description">Family</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="gallery">
+                <a href="profile/life1.jpg" target="winImage">
+                <img src="profile/life1.jpg" alt="AI seminar." title="AI seminar." />
+            	</a>
+                <div class="description">Life Lately</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/life2.jpg" target="winImage">
+                <img src="profile/life2.jpg" alt="This is our picture during CCSS week." title="This is our picture during CCSS week." />
+            	</a>
+                <div class="description">Life Lately</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/life3.jpg" target="winImage">
+                <img src="profile/life3.jpg" alt="This is a picture of me." title="This is a picture of me." />
+            	</a>
+                <div class="description">Life Lately</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/life4.jpg" target="winImage">
+                <img src="profile/life4.jpg" alt="This is a random image." title="This is a random image." />
+            	</a>
+                <div class="description">Life Lately</div>
+            </div>
+            <div class="gallery">
+                <a href="profile/life5.jpg" target="winImage">
+                <img src="profile/life5.jpg" alt="This is a random image." title="This is a random image." />
+            	</a>
+	    <div class="description">Life Lately</div>
+            </div>
+        </div>
+      
+    <div class="row">
+        
+	<div class="gallery">
+            <a href="profile/coco.jpg" target="winImage">
+                <img src="profile/coco.jpg" alt="Here is a photo of our dog named Coco." title="Here is a photo of our dog named Coco." />
+            </a>
+            <div class="description">Pets</div>
+        </div>
+
+        <div class="gallery">
+            <a href="profile/lulu.jpg" target="winImage">
+                <img src="profile/lulu.jpg" alt="Here is a photo of our dog named Lulu." title="Here is a photo of our dog named Lulu." />
+            </a>
+            <div class="description">Pets</div>
+        </div>
+
+        <div class="gallery">
+            <a href="profile/gato.jpg" target="winImage">
+                <img src="profile/gato.jpg" alt="Here is a photo of our cat named Gato." title="Here is a photo of our cat named Gato." />
+            </a>
+            <div class="description">Pets</div>
+        </div>
+
+	<div class="gallery">
+            <a href="profile/cats.jpg" target="winImage">
+                <img src="profile/cats.jpg" alt="Here is a photo of our cat Gato with his friends." title="Here is a photo of our cat Gato with his friends." />
+            </a>
+            <div class="description">Pets</div>
+        </div>
+
+	<div class="gallery">
+            <a href="profile/dog.jpg" target="winImage">
+                <img src="profile/dog.jpg" alt="Here is a photo of our dog named Spooky." title="Here is a photo of our dog named Spooky." />
+            </a>
+            <div class="description">Pets</div>
+        </div>
+	
+    </div>
+
+    
+    <div class="row">
+        
+	<div class="gallery">
+            <a href="profile/japan.jpeg" target="winImage">
+                <img src="profile/japan.jpeg" alt="Cherry Blossom Trees in Japan." title="Cherry Blossom Trees in Japan." />
+            </a>
+            <div class="description">Dream Countries</div>
+        </div>
+
+        <div class="gallery">
+            <a href="profile/South-Korea.jpg" target="winImage">
+                <img src="profile/South-Korea.jpg" alt="Jeju Island in South Korea." title="Jeju Island in South Korea." />
+            </a>
+            <div class="description">Dream Countries</div>
+        </div>
+
+        <div class="gallery">
+            <a href="profile/italy.jpg" target="winImage">
+                <img src="profile/italy.jpg" alt="Venice, Italy." title="Venice, Italy." />
+            </a>
+            <div class="description">Dream Countries</div>
+        </div>
+
+	<div class="gallery">
+            <a href="profile/chicago.jpg" target="winImage">
+                <img src="profile/chicago.jpg" alt="The Bean(Cloud Gate) in Chicago." title="The Bean(Cloud Gate) in Chicago." />
+            </a>
+            <div class="description">Dream Countries</div>
+        </div>
+
+	<div class="gallery">
+            <a href="profile/NewZealand.jpg" target="winImage">
+                <img src="profile/NewZealand.jpg" alt="Abel Tasman National Park in New Zealand." title="Abel Tasman National Park in New Zealand." />
+            </a>
+            <div class="description">Dream Countries</div>
+	</div>
+    </div>
+    </div>
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+        <a href="HomePage.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>

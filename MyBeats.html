@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Beat - Music Compilation</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #F7A8C4, #FF66B2);
+            font-family: Arial, sans-serif;
+            color: #000;
+            margin: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #000;
+            text-transform: uppercase;
+        }
+        h1 {
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+        .genre-header {
+            grid-column: span 3;
+            background: #FF66B2;
+            color: #FFF;
+            padding: 10px 0;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .music-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+        .music-entry {
+            background: #FFF;
+            border: 2px solid #FF66B2;
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .music-entry:hover {
+            transform: scale(1.02);
+        }
+        img {
+            width: 90%;
+            border-radius: 10px;
+            margin: 5px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        audio {
+            margin-top: 5px;
+            width: 90%;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .floating-buttons {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-button, .top-button {
+            background: #ffffff;
+            border: 2px solid #E53888;
+            border-radius: 6px;
+            padding: 5px 10px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #E53888;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
+
+        .back-button:hover, .top-button:hover {
+            background: #E53888;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .back-button::before {
+            content: "←";
+        }
+
+        .top-button::after {
+            content: "▲";
+            margin-left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Beat</h1>
+    <p>Explore my favorite music genres: K-pop, Pop, and Jazz!</p>
+
+    <div class="music-container">
+        <h2 class="genre-header" id="K-pop">K-pop</h2>
+        <div class="music-entry">
+            <p>Title: <em>Dynamite - BTS</em></p>
+            <a href="profile/sp_dynamite.jpeg" target="winImage">
+                <img src="profile/sp_dynamite.jpeg" alt="Dynamite Album by BTS." title="Dynamite Album by BTS." />
+            	</a>
+            <audio controls>
+                <source src="music/dynamite_short.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="music-entry">
+            <p>Title: <em>How You Like That - Blackpink</em></p>
+            <a href="profile/sp_howyoulikethat.jpeg" target="winImage">
+                <img src="profile/sp_howyoulikethat.jpeg" alt="How You Like That Album by Blackpink." title="How You Like That Album by Blackpink." />
+            	</a>
+            <audio controls>
+                <source src="music/howyoulikethat_short.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="music-entry">
+            <p>Title: <em>Love Shot - EXO</em></p>
+            <a href="profile/sp_loveshot.jpeg" target="winImage">
+                <img src="profile/sp_loveshot.jpeg" alt="Love Shot Album by BTS." title="Love Shot Album by BTS." />
+            	</a>
+            <audio controls>
+                <source src="music/loveshot_short.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <h2 class="genre-header" id="Pop">Pop</h2>
+        <div class="music-entry">
+            <p>Title: <em>Shape Of You - Ed Sheeran</em></p>
+            <a href="profile/sp_shapeofyou.jpeg" target="winImage">
+                <img src="profile/sp_shapeofyou.jpeg" alt="Shape Of You Album by Ed Sheeran." title="Shape Of You Album by Ed Sheeran." />
+            	</a>
+            <audio controls>
+                <source src="music/shapeofyou_short.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="music-entry">
+            <p>Title: <em>Blank Space - Taylor Swift</em></p>
+            <a href="profile/sp_blankspace.jpeg" target="winImage">
+                <img src="profile/sp_blankspace.jpeg" alt="Blank Space Album by Taylor Swift." title="Blank Space Album by Taylor Swift." />
+            	</a>
+            <audio controls>
+                <source src="music/blankspace_short.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="music-entry">
+            <p>Title: <em>Levitating - Dua Lipa</em></p>
+            <a href="profile/sp_levitating.jpeg" target="winImage">
+                <img src="profile/sp_levitating.jpeg" alt="Levitating Album by Dua Lipa." title="Levitating Album by Dua Lipa." />
+            	</a>
+            <audio controls>
+                <source src="music/levitating_short.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <h2 class="genre-header" id="Jazz">Jazz</h2>
+        <div class="music-entry">
+            <p>Title: <em>Fly Me To The Moon - Frank Sinatra</em></p>
+            <a href="profile/sp_flymetothemoon.jpeg" target="winImage">
+                <img src="profile/sp_flymetothemoon.jpeg" alt="Fly Me To The Moon Album by Frank Sinatra." title="Fly Me To The Moon Album by Frank Sinatra." />
+            	</a>
+            <audio controls>
+                <source src="music/flymetothemoon_short.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="music-entry">
+            <p>Title: <em>Don't Know Why - Norah Jones</em></p>
+            <a href="profile/sp_dontknowwhy.jpeg" target="winImage">
+                <img src="profile/sp_dontknowwhy.jpeg" alt="Don't Know Why Album by Norah Jones." title="Don't Know Why Album by Norah Jones." />
+            	</a>
+            <audio controls>
+                <source src="music/dontknowwhy_short.mp3" type="audio/mp3">
+        </div>
+
+        <div class="music-entry">
+            <p>Title: <em>What A Wonderful World - Louis Armstrong</em></p>
+            <a href="profile/sp_whatawonderfulworld.jpeg" target="winImage">
+                <img src="profile/sp_whatawonderfulworld.jpeg" alt="What A Wonderful World Album by Louis Armstrong." title="What A Wonderful World Album by Louis Armstrong." />
+            	</a>
+            <audio controls>
+                <source src="music/whatawonderfulworld_short.mp3" type="audio/mp3">            </audio>
+        </div>
+    </div>
+
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+        <a href="HomePage.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
+
+
+
+
+

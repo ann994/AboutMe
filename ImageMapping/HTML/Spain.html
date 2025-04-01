@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Mapping - Spain</title>
+    <style>
+        body {
+            background: #F7A8C4;
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: justify;
+        }
+        h1 {
+            background: #E53888;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2, h3 {
+            color: #000000;
+            text-align: center;
+	    font-size: 24px;
+        }
+        p {
+            text-align: justify;
+            margin: 0 20px;
+            line-height: 1.6;
+        }
+        a {
+            color: #E53888;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff3385;
+        }
+        .film-container {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+        }
+        .top-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .top-link a {
+            text-decoration: underline;
+        }
+        .top-link a:hover {
+            color: purple;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+	.floating-buttons {
+    	    position: fixed;
+    	    bottom: 15px;
+    	    right: 15px;
+    	    display: flex;
+    	    flex-direction: column;
+    	    gap: 8px;
+	}
+
+ 
+	.back-button, .top-button {
+   	    background: #ffffff;
+    	    border: 2px solid #E53888;
+    	    border-radius: 6px;
+    	    padding: 5px 10px; 
+    	    font-size: 12px;
+    	    text-decoration: none;
+    	    color: #E53888;
+    	    font-weight: bold;
+    	    display: flex;
+    	    align-items: center;
+    	    justify-content: center;
+    	    gap: 3px;
+    	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    	    transition: background 0.3s, color 0.3s, transform 0.2s;
+	}
+
+	.back-button:hover, .top-button:hover {
+    	    background: #E53888;
+    	    color: #ffffff;
+    	    transform: scale(1.05);
+	}
+
+	.back-button::before {
+    	    content: "←";
+	}
+
+	.top-button::after {
+    	    content: "▲";
+    	    margin-left: 3px;
+	}
+    </style>
+</head>
+<body>
+    <div class="film-container">
+        <h3>Madrid, the heart of Spain</h3>
+        <a href="../Images/madrid.jpg" target="winImage">
+            <img src="../Images/madrid.jpg" alt="Madrid, Spain" title="Madrid, Spain" />
+        </a>
+        <p><strong>Reason why this place is special to me:</strong> One of the things that makes Madrid so special to me is its rich history. Walking through Plaza Mayor or visiting the Royal Palace feels like stepping back in time, surrounded by centuries of Spanish heritage. The city's historic landmarks tell stories of kings and conquests, making every stroll through Madrid a learning experience.</p>
+        <p><strong>How to get there:</strong> Madrid, the capital of Spain, is one of the most well-connected cities in Europe, making it easy to reach from almost anywhere in the world. Whether by air, train, or road, there are multiple ways to travel to this vibrant city.</p>
+    </div>
+    <div class="film-container">
+	<h2>Other places to visit in the city/country.</h2>
+        <a href="../Images/theroyalpalace.jpg" target="winImage">
+            <img src="../Images/theroyalpalace.jpg" alt="The Royal Palace of Madrid" title="The Royal Palace of Madrid" />
+	</a>
+	<p><strong>The Royal Palace of Madrid:</strong> The Royal Palace is one of Madrid’s most iconic landmarks, serving as the official residence of the Spanish royal family (although they do not live there). Visitors can tour its opulent rooms, admire the stunning architecture, and enjoy the beautiful gardens surrounding the palace.</p>
+     </div>
+       
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+       	<a href="DreamPlaces.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>

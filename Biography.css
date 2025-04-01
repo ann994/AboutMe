@@ -1,0 +1,110 @@
+ body {
+            background-color: #F7A8C4;
+            text-align: center;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        h1 {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 26px;
+        }
+        h2, h3 {
+            color: #000000;
+            text-align: left;
+            text-decoration: underline;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: purple;
+        }
+        .center-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .right-nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        nav a {
+            background: #ffffff;
+            border: 2px solid #ff66b2;
+            border-radius: 10px;
+            padding: 6px 14px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background: #E53888;
+            color: #ffffff;
+        }
+        img {
+            width: 170px;
+            height: 230px;
+            padding: 20px;
+            border-radius: 30px;
+        }
+        p {
+            text-align: justify;
+        }
+
+ 
+	.floating-buttons {
+    	    position: fixed;
+    	    bottom: 15px;
+    	    right: 15px;
+    	    display: flex;
+    	    flex-direction: column;
+    	    gap: 8px;
+	}
+
+ 
+	.back-button, .top-button {
+   	    background: #ffffff;
+    	    border: 2px solid #E53888;
+    	    border-radius: 6px;
+    	    padding: 5px 10px; 
+    	    font-size: 12px;
+    	    text-decoration: none;
+    	    color: #E53888;
+    	    font-weight: bold;
+    	    display: flex;
+    	    align-items: center;
+    	    justify-content: center;
+    	    gap: 3px;
+    	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    	    transition: background 0.3s, color 0.3s, transform 0.2s;
+	}
+
+	.back-button:hover, .top-button:hover {
+    	    background: #E53888;
+    	    color: #ffffff;
+    	    transform: scale(1.05);
+	}
+
+	.back-button::before {
+    	    content: "←";
+	}
+
+	.top-button::after {
+    	    content: "▲";
+    	    margin-left: 3px;
+	}

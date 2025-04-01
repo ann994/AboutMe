@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Mapping - Korea</title>
+    <style>
+        body {
+            background: #F7A8C4;
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: justify;
+        }
+        h1 {
+            background: #E53888;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2, h3 {
+            color: #000000;
+            text-align: center;
+	    font-size: 24px;
+        }
+        p {
+            text-align: justify;
+            margin: 0 20px;
+            line-height: 1.6;
+        }
+        a {
+            color: #E53888;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff3385;
+        }
+        .film-container {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+        }
+        .top-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .top-link a {
+            text-decoration: underline;
+        }
+        .top-link a:hover {
+            color: purple;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+	.floating-buttons {
+    	    position: fixed;
+    	    bottom: 15px;
+    	    right: 15px;
+    	    display: flex;
+    	    flex-direction: column;
+    	    gap: 8px;
+	}
+
+ 
+	.back-button, .top-button {
+   	    background: #ffffff;
+    	    border: 2px solid #E53888;
+    	    border-radius: 6px;
+    	    padding: 5px 10px; 
+    	    font-size: 12px;
+    	    text-decoration: none;
+    	    color: #E53888;
+    	    font-weight: bold;
+    	    display: flex;
+    	    align-items: center;
+    	    justify-content: center;
+    	    gap: 3px;
+    	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    	    transition: background 0.3s, color 0.3s, transform 0.2s;
+	}
+
+	.back-button:hover, .top-button:hover {
+    	    background: #E53888;
+    	    color: #ffffff;
+    	    transform: scale(1.05);
+	}
+
+	.back-button::before {
+    	    content: "←";
+	}
+
+	.top-button::after {
+    	    content: "▲";
+    	    margin-left: 3px;
+	}
+    </style>
+</head>
+<body>
+    <div class="film-container">
+        <h3>The heart of South Korea - Seoul</h3>
+        <a href="../Images/seoul.jpg" target="winImage">
+            <img src="../Images/seoul.jpg" alt="Seoul, South Korea" title="Seoul, South Korea" />
+        </a>
+        <p><strong>Reason why this place is special to me:</strong> Seoul, South Korea, is special to me because it perfectly blends history, culture, and modernity in a way that makes every visit feel exciting and meaningful. As a city that never sleeps, Seoul offers an incredible mix of traditional palaces, futuristic skyscrapers, delicious food, and a vibrant entertainment scene that keeps me fascinated. But what truly makes Seoul special to me is the feeling of warmth and energy that fills the city. The friendly locals, the cozy cafés, the beautiful parks, and even the fast-paced subway system all contribute to an unforgettable experience.</p>
+        <p><strong>How to get there:</strong> Arriving by Air – The most common and convenient option for most international travelers, flying is the fastest and easiest way to get to Seoul. The city is served by two major airports: Incheon International Airport (ICN) and Gimpo International Airport (GMP). Incheon International Airport is the primary gateway for international flights, welcoming travelers from all over the world.</p>
+    </div>
+    <div class="film-container">
+	<h2>Other places to visit in the city/country.</h2>
+        <a href="../Images/myeongdong.jpg" target="winImage">
+            <img src="../Images/myeongdong.jpg" alt="Myeongdong Shopping Street" title="Myeongdong Shopping Street" />
+	</a>
+	<p><strong>Myeongdong:</strong> One of Seoul’s busiest shopping districts, Myeongdong is a paradise for fashion lovers and beauty enthusiasts. It is also a great place to try delicious Korean street food.</p>
+     </div>
+       
+    <div class="floating-buttons">
+	<a href="#" class="top-button">Go Top</a>
+       	<a href="DreamPlaces.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
